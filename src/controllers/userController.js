@@ -147,7 +147,6 @@ export const postEdit = async (req, res) => {
     body: { name, email, username, location },
     file,
   } = req;
-  console.log(file);
   const exists = await User.exists({
     _id: { $ne: { _id } },
     $or: [{ username }, { email }],
