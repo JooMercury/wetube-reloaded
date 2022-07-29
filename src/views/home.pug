@@ -2,8 +2,8 @@ extends base
 include mixins/video
 
 block content 
-    each view in videos 
-        +video(view)
+    each video in videos 
+        +video(video)
     else    
-        div Sorry nothing found.
+        li Sorry nothing found.
     
